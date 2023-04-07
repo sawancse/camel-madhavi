@@ -1,0 +1,30 @@
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-04-07 08:18:15.860 ERROR 10996 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.apache.camel.RuntimeCamelException: org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: >>> To[ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system",
+    "(member=uid=huntc,ou=users,ou=system)] <<< in route: Route(route1)[[From[file:data/input?delete=true&readLock=non... because of Failed to resolve endpoint: ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system",
+    "(member=uid=huntc,ou=users,ou=system) due to: Illegal character in opaque part at index 55: ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system%22,
+%20%20%20%20%22(member=uid=huntc,ou=users,ou=system)
+
+---
+2023-04-07 08:25:05.553 ERROR 12152 --- [le://data/input] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-ACLBLRFC818-1680836097893-0-22 on ExchangeId: ID-ACLBLRFC818-1680836097893-0-21). Exhausted after delivery attempt: 1 caught: java.lang.NullPointerException
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [file://data/input?delete=true&readLock=none                                   ] [         0]
+[route1            ] [process1          ] [Processor@0x5b41e2e4                                                          ] [         0]
+[route1            ] [to1               ] [direct:ldapcall                                                               ] [         0]
+[route2            ] [process2          ] [Processor@0x7faac720                                                          ] [         0]
+[route1            ] [to2               ] [ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system,member=member1            ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.lang.NullPointerException: null
+	at org.apache.camel.component.ldap.LdapProducer.simpleSearch(LdapProducer.java:120) ~[camel-ldap-2.20.1.jar:2.20.1]
+	at org.apache.camel.component.ldap.LdapProducer.process(LdapProducer.java:75) ~[camel-ldap-2.20.1.jar:2.20.1]
+	at org.apache.camel.util.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:61) ~[camel-core-2.20.1.jar:2.20.1]
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148) ~[camel-core-2.20.1.jar:2.20.1]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) ~[camel-core-2.20.1.jar:2.20.1]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.1.jar:2.20.1]

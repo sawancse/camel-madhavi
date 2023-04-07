@@ -1,0 +1,9 @@
+com\learncamel\processor\MyProcessor.class
+com\learncamel\route\SimpleCamelRoute$2.class
+com\learncamel\LearncamelSpringBootApplication.class
+com\learncamel\bean\MyBean.class
+com\learncamel\exception\CamelCustomException.class
+com\learncamel\route\SimpleCamelRoute$1.class
+com\learncamel\exception\GenericCamelCustomException.class
+com\learncamel\processor\ProcessorCustomException.class
+com\learncamel\route\SimpleCamelRoute.class
