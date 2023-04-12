@@ -1,0 +1,6 @@
+com\learncamel\model\Contact.class
+com\learncamel\LearncamelSpringBootApplication.class
+com\learncamel\bean\MyBean.class
+com\learncamel\bean\Item.class
+com\learncamel\route\SimpleCamelRoute.class
+com\learncamel\bean\Order.class
