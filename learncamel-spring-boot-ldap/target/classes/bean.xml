@@ -15,7 +15,7 @@
 				<!-- <prop key="java.naming.security.authentication">none</prop> -->
 				<!-- <prop key="java.naming.security.protocol" value="ssl"/> -->
 				<prop key="java.naming.security.authentication">simple</prop>
-				<prop key="java.naming.security.principal">cn=Manager,dc=example,dc=com</prop>
+				<!-- <prop key="java.naming.security.principal">cn=Manager,dc=example,dc=com</prop> -->
 				<prop key="java.naming.security.principal">cn=read-only-admin,dc=example,dc=com</prop>
 				<prop key="java.naming.security.credentials">password</prop>
 				<!-- <prop key="java.naming.ldap.factory.socket" value="zotix.co.util.CustomSocketFactory"/> -->

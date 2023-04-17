@@ -21,8 +21,13 @@ public class SimpleCamelRoute extends RouteBuilder {
 			}
 		}).to("direct:ldapcall")
 /*		.to("ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system,member=uid=huntc,ou=users,ou=system").log("ldap res ${body}");
-*/		.to("ldap:ldapserver?base=ou=scientists,dc=example,dc=com").log("ldap res ${body}");
-
+*/		///.to("ldap:ldapserver?base=ou=mathematicians").log("ldap res ${body}");   //step-1
+		.to("ldap:ldapserver?base=uid=boyle,dc=example,dc=com").log("ldap res ${body}");   //step-1
+		//writing to csv
+		//
+		
+//"ldap:ldapserver?base=ou=mygroup,ou=groups,ou=system",
+	//    "(member=uid=huntc,ou=users,ou=system)"
 
 		from("direct:ldapcall").process(new Processor() {
 
