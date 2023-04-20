@@ -12,7 +12,7 @@
 				<prop key="java.naming.factory.initial">com.sun.jndi.ldap.LdapCtxFactory</prop>
 				<!-- <prop key="java.naming.provider.url">ldap://localhost:10389</prop> -->
 				<prop key="java.naming.provider.url">ldap://ldap.forumsys.com:389</prop>
-				<!-- <prop key="java.naming.security.authentication">none</prop> -->
+				<!-- <prop key="java.naming.security.authentication">s</prop> -->
 				<!-- <prop key="java.naming.security.protocol" value="ssl"/> -->
 				<prop key="java.naming.security.authentication">simple</prop>
 				<!-- <prop key="java.naming.security.principal">cn=Manager,dc=example,dc=com</prop> -->
