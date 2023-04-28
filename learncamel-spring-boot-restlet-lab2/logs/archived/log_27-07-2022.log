@@ -1,0 +1,190 @@
+27-07-2022 06:46:46.425 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 14240 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+27-07-2022 06:46:46.449 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+27-07-2022 06:46:46.500 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4470f8a6: startup date [Wed Jul 27 06:46:46 IST 2022]; root of context hierarchy
+27-07-2022 06:46:46.701 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+27-07-2022 06:46:49.650 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c644d36b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-07-2022 06:46:49.698 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$e86e998a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-07-2022 06:46:50.231 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+27-07-2022 06:46:50.253 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+27-07-2022 06:46:50.255 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+27-07-2022 06:46:50.428 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+27-07-2022 06:46:50.429 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 3929 ms
+27-07-2022 06:46:50.713 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+27-07-2022 06:46:50.715 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+27-07-2022 06:46:50.720 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+27-07-2022 06:46:50.721 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+27-07-2022 06:46:50.722 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+27-07-2022 06:46:50.722 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+27-07-2022 06:46:51.364 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+27-07-2022 06:46:51.383 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+27-07-2022 06:46:51.484 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+27-07-2022 06:46:51.486 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+27-07-2022 06:46:51.488 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+27-07-2022 06:46:51.549 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+27-07-2022 06:46:51.743 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+27-07-2022 06:46:52.448 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+27-07-2022 06:46:52.467 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+27-07-2022 06:46:52.493 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+27-07-2022 06:46:52.627 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-07-2022 06:46:53.203 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4470f8a6: startup date [Wed Jul 27 06:46:46 IST 2022]; root of context hierarchy
+27-07-2022 06:46:53.292 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+27-07-2022 06:46:53.301 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 9 ms.
+27-07-2022 06:46:53.345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+27-07-2022 06:46:53.351 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+27-07-2022 06:46:53.352 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+27-07-2022 06:46:53.414 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-07-2022 06:46:53.414 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-07-2022 06:46:53.484 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-07-2022 06:46:53.843 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+27-07-2022 06:46:53.993 [main] WARN  o.a.c.i.c.AnnotationTypeConverterLoader.loadConverterMethods - Ignoring converter type: org.apache.camel.component.restlet.converter.RestletConverter as a dependent class could not be found: java.lang.NoClassDefFoundError: [Lorg/restlet/data/Method;
+java.lang.NoClassDefFoundError: [Lorg/restlet/data/Method;
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.apache.camel.impl.converter.AnnotationTypeConverterLoader.loadConverterMethods(AnnotationTypeConverterLoader.java:262)
+	at org.apache.camel.impl.converter.AnnotationTypeConverterLoader.load(AnnotationTypeConverterLoader.java:130)
+	at org.apache.camel.impl.converter.BaseTypeConverterRegistry.loadTypeConverters(BaseTypeConverterRegistry.java:640)
+	at org.apache.camel.impl.converter.DefaultTypeConverter.doStart(DefaultTypeConverter.java:62)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.util.ServiceHelper.startService(ServiceHelper.java:75)
+	at org.apache.camel.impl.DefaultCamelContext.doAddService(DefaultCamelContext.java:1495)
+	at org.apache.camel.impl.DefaultCamelContext.addService(DefaultCamelContext.java:1455)
+	at org.apache.camel.impl.DefaultCamelContext.getTypeConverter(DefaultCamelContext.java:2576)
+	at org.apache.camel.spring.boot.TypeConversionConfiguration.typeConverter(TypeConversionConfiguration.java:44)
+	at org.apache.camel.spring.boot.TypeConversionConfiguration$$EnhancerBySpringCGLIB$$1a4951ed.CGLIB$typeConverter$0(<generated>)
+	at org.apache.camel.spring.boot.TypeConversionConfiguration$$EnhancerBySpringCGLIB$$1a4951ed$$FastClassBySpringCGLIB$$56cadec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.apache.camel.spring.boot.TypeConversionConfiguration$$EnhancerBySpringCGLIB$$1a4951ed.typeConverter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.ClassNotFoundException: org.restlet.data.Method
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 common frames omitted
+27-07-2022 06:46:54.010 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 7)
+27-07-2022 06:46:55.372 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+27-07-2022 06:46:55.393 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+27-07-2022 06:46:55.449 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+27-07-2022 06:46:55.450 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+27-07-2022 06:46:55.464 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+27-07-2022 06:46:55.466 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+27-07-2022 06:46:55.601 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+27-07-2022 06:46:55.629 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 0.163 seconds
+27-07-2022 06:46:55.629 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.028 seconds
+27-07-2022 06:46:55.632 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+27-07-2022 06:46:55.648 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+27-07-2022 06:46:55.658 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application startup failed
+org.apache.camel.RuntimeCamelException: org.apache.camel.FailedToCreateRouteException: Failed to create route itemPostRoute: Route(itemPostRoute)[[From[restlet:http://localhost:8083/ite... because of Failed to resolve endpoint: restlet://http://localhost:8083/item?restletMethods=POST due to: Cannot auto create component: restlet
+	at org.apache.camel.util.ObjectHelper.wrapRuntimeCamelException(ObjectHelper.java:1831)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:136)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:174)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route itemPostRoute: Route(itemPostRoute)[[From[restlet:http://localhost:8083/ite... because of Failed to resolve endpoint: restlet://http://localhost:8083/item?restletMethods=POST due to: Cannot auto create component: restlet
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:209)
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:1148)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3727)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3441)
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:208)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:3249)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:3245)
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:3268)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:3245)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:3168)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:133)
+	... 16 common frames omitted
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: restlet://http://localhost:8083/item?restletMethods=POST due to: Cannot auto create component: restlet
+	at org.apache.camel.impl.DefaultCamelContext.getEndpoint(DefaultCamelContext.java:763)
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:80)
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:219)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:115)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:121)
+	at org.apache.camel.model.FromDefinition.resolveEndpoint(FromDefinition.java:69)
+	at org.apache.camel.impl.DefaultRouteContext.getEndpoint(DefaultRouteContext.java:97)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1278)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:204)
+	... 27 common frames omitted
+Caused by: org.apache.camel.RuntimeCamelException: Cannot auto create component: restlet
+	at org.apache.camel.impl.DefaultCamelContext.getComponent(DefaultCamelContext.java:494)
+	at org.apache.camel.impl.DefaultCamelContext.getComponent(DefaultCamelContext.java:458)
+	at org.apache.camel.impl.DefaultCamelContext.getEndpoint(DefaultCamelContext.java:706)
+	... 35 common frames omitted
+Caused by: org.apache.camel.RuntimeCamelException: Cannot auto create component: restlet
+	at org.apache.camel.impl.DefaultCamelContext.initComponent(DefaultCamelContext.java:549)
+	at org.apache.camel.impl.DefaultCamelContext.lambda$getComponent$0(DefaultCamelContext.java:479)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.camel.impl.DefaultCamelContext.getComponent(DefaultCamelContext.java:477)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.apache.camel.component.restlet.RestletComponent': Failed to introspect bean class [org.apache.camel.component.restlet.RestletComponent] for lookup method metadata: could not find class that it depends on; nested exception is java.lang.NoClassDefFoundError: org/restlet/Server
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:343)
+	at org.apache.camel.spring.spi.SpringInjector.newInstance(SpringInjector.java:39)
+	at org.apache.camel.impl.DefaultComponentResolver.resolveComponent(DefaultComponentResolver.java:73)
+	at org.apache.camel.impl.DefaultCamelContext.initComponent(DefaultCamelContext.java:543)
+	... 40 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/restlet/Server
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:613)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:524)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:510)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:247)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.restlet.Server
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 55 common frames omitted
+27-07-2022 06:46:55.661 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4470f8a6: startup date [Wed Jul 27 06:46:46 IST 2022]; root of context hierarchy
+27-07-2022 06:46:55.666 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+27-07-2022 06:46:55.667 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+27-07-2022 06:46:55.670 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'

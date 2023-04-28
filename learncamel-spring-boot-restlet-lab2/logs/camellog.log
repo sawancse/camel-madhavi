@@ -1,0 +1,886 @@
+26-04-2023 07:33:09.592 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 24852 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:33:09.607 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:33:09.644 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:33:09 IST 2023]; root of context hierarchy
+26-04-2023 07:33:09.754 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:33:11.050 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42f8d751] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:33:11.076 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$65229d70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:33:11.403 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:33:11.415 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:33:11.416 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:33:11.528 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:33:11.528 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1884 ms
+26-04-2023 07:33:11.692 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:33:11.694 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:33:11.695 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:33:11.696 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:33:11.696 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:33:11.696 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:33:12.131 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:33:12.142 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:33:12.199 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:33:12.200 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:33:12.202 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:33:12.238 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:33:12.356 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:33:12.766 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:33:12.777 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:33:12.793 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:33:12.875 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:33:13.199 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:33:09 IST 2023]; root of context hierarchy
+26-04-2023 07:33:13.237 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:33:13.240 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 3 ms.
+26-04-2023 07:33:13.263 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:33:13.267 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:33:13.267 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:33:13.296 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:33:13.297 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:33:13.338 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:33:13.509 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:33:13.599 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:33:14.346 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:33:14.357 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:33:14.398 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:33:14.398 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:33:14.409 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:33:14.410 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:33:14.619 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@3c88191b
+26-04-2023 07:33:14.620 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@a926db4
+26-04-2023 07:33:14.690 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:33:14.772 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 07:33:14.793 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 0.384 seconds
+26-04-2023 07:33:14.794 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.022 seconds
+26-04-2023 07:33:14.797 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+26-04-2023 07:33:14.805 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+26-04-2023 07:33:14.812 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application startup failed
+org.apache.camel.RuntimeCamelException: org.apache.camel.FailedToCreateRouteException: Failed to create route createitem-route-id: Route(createitem-route-id)[[From[rest:put:/{{api.ver}}/item:... because of No bean could be found in the registry for: servlet of type: org.apache.camel.spi.RestConsumerFactory
+	at org.apache.camel.util.ObjectHelper.wrapRuntimeCamelException(ObjectHelper.java:1831)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:136)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:174)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:11)
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route createitem-route-id: Route(createitem-route-id)[[From[rest:put:/{{api.ver}}/item:... because of No bean could be found in the registry for: servlet of type: org.apache.camel.spi.RestConsumerFactory
+	at org.apache.camel.impl.RouteService.warmUp(RouteService.java:147)
+	at org.apache.camel.impl.DefaultCamelContext.doWarmUpRoutes(DefaultCamelContext.java:3945)
+	at org.apache.camel.impl.DefaultCamelContext.safelyStartRouteServices(DefaultCamelContext.java:3852)
+	at org.apache.camel.impl.DefaultCamelContext.doStartOrResumeRoutes(DefaultCamelContext.java:3638)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3490)
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:208)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:3249)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:3245)
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:3268)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:3245)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:3168)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:133)
+	... 16 common frames omitted
+Caused by: org.apache.camel.NoSuchBeanException: No bean could be found in the registry for: servlet of type: org.apache.camel.spi.RestConsumerFactory
+	at org.apache.camel.component.rest.RestEndpoint.createConsumer(RestEndpoint.java:406)
+	at org.apache.camel.impl.EventDrivenConsumerRoute.addServices(EventDrivenConsumerRoute.java:69)
+	at org.apache.camel.impl.DefaultRoute.onStartingServices(DefaultRoute.java:103)
+	at org.apache.camel.impl.RouteService.doWarmUp(RouteService.java:172)
+	at org.apache.camel.impl.RouteService.warmUp(RouteService.java:145)
+	... 28 common frames omitted
+26-04-2023 07:33:14.813 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:33:09 IST 2023]; root of context hierarchy
+26-04-2023 07:33:14.816 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 07:33:14.817 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 07:33:14.818 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:35:13.874 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 17388 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:35:13.876 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:35:13.919 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:35:13 IST 2023]; root of context hierarchy
+26-04-2023 07:35:14.020 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:35:15.178 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c644d36b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:35:15.209 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$e86e998a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:35:15.551 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:35:15.563 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:35:15.564 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:35:15.682 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:35:15.682 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1763 ms
+26-04-2023 07:35:15.881 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:35:15.883 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:35:15.886 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:35:15.887 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:35:15.887 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:35:15.887 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:35:16.241 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:35:16.255 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:35:16.320 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:35:16.321 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:35:16.322 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:35:16.358 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:35:16.474 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:35:16.919 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:35:16.929 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:35:16.946 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:35:17.024 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:35:17.360 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:35:13 IST 2023]; root of context hierarchy
+26-04-2023 07:35:17.397 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:35:17.400 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 2 ms.
+26-04-2023 07:35:17.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:35:17.430 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:35:17.431 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:35:17.459 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:35:17.459 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:35:17.500 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:35:17.674 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:35:17.753 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:35:18.542 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:35:18.553 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:35:18.572 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:35:18.573 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:35:18.580 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:35:18.581 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:35:18.793 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@31efacad
+26-04-2023 07:35:18.795 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@11e3d08
+26-04-2023 07:35:18.823 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:35:18.917 [main] INFO  org.restlet.Component.Server.start - Starting the internal [HTTP/1.1] server on port 8083
+26-04-2023 07:35:18.922 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: itemPostRoute started and consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:35:18.923 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: item-get-route-id started and consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:35:18.924 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://createItem
+26-04-2023 07:35:18.925 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://itemLookUpBySku
+26-04-2023 07:35:18.926 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+26-04-2023 07:35:18.927 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) started in 0.347 seconds
+26-04-2023 07:35:18.931 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:35:18.940 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:35:18.941 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+26-04-2023 07:35:18.956 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+26-04-2023 07:35:18.962 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 5.379 seconds (JVM running for 6.678)
+26-04-2023 07:40:09.672 [Restlet-1468031814] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:40:09.677 [Restlet-1468031814] INFO  itemPostRoute.log - Unmarshaled record is {
+    "itemId": "",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:40:09.681 [Restlet-1468031814] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-ACLBLRFC818-1682474717599-0-2 on ExchangeId: ID-ACLBLRFC818-1682474717599-0-1). Exhausted after delivery attempt: 1 caught: java.lang.ClassCastException: java.lang.String cannot be cast to com.learncamel.domain.Item
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[itemPostRoute     ] [itemPostRoute     ] [restlet://http://localhost:8083/item?restletMethods=POST                      ] [        35]
+[itemPostRoute     ] [log1              ] [log                                                                           ] [        12]
+[itemPostRoute     ] [convertBodyTo1    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[itemPostRoute     ] [log2              ] [log                                                                           ] [         0]
+[itemPostRoute     ] [process1          ] [Processor@0x61037caf                                                          ] [         1]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.ClassCastException: java.lang.String cannot be cast to com.learncamel.domain.Item
+	at com.learncamel.process.BuildSQLProcessor.process(BuildSQLProcessor.java:15)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97)
+	at org.apache.camel.component.restlet.RestletConsumer$1.handle(RestletConsumer.java:68)
+	at org.apache.camel.component.restlet.MethodBasedRouter.handle(MethodBasedRouter.java:58)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+26-04-2023 07:40:09.691 [Restlet-1468031814] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:40:09	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	500	2781	119	43	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:43:53.920 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-04-2023 07:43:53.921 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:35:13 IST 2023]; root of context hierarchy
+26-04-2023 07:43:53.925 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 07:43:53.926 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 07:43:53.927 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 4 routes (timeout 2 seconds)
+26-04-2023 07:43:53.931 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: item-get-route-id shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:43:53.931 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: itemPostRoute shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:43:53.932 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://itemLookUpBySku
+26-04-2023 07:43:53.933 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://createItem
+26-04-2023 07:43:53.933 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 4 routes completed in 0 seconds
+26-04-2023 07:43:53.955 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 8 minutes
+26-04-2023 07:43:53.957 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.030 seconds
+26-04-2023 07:43:53.958 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 07:43:53.960 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:44:08.289 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 18980 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:44:08.293 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:44:08.336 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:44:08 IST 2023]; root of context hierarchy
+26-04-2023 07:44:08.434 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:44:09.523 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78d3c606] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:44:09.551 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$9afd8c25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:44:09.891 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:44:09.903 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:44:09.904 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:44:10.029 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:44:10.030 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1694 ms
+26-04-2023 07:44:10.224 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:44:10.227 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:44:10.229 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:44:10.230 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:44:10.230 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:44:10.230 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:44:10.651 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:44:10.663 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:44:10.731 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:44:10.732 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:44:10.733 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:44:10.773 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:44:10.910 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:44:11.352 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:44:11.365 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:44:11.381 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:44:11.509 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:44:11.865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:44:08 IST 2023]; root of context hierarchy
+26-04-2023 07:44:11.909 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:44:11.912 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 3 ms.
+26-04-2023 07:44:11.937 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:44:11.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:44:11.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:44:11.980 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:44:11.980 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:44:12.044 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:44:12.255 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:44:12.341 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:44:13.136 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:44:13.149 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:44:13.168 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:44:13.169 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:44:13.174 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:44:13.176 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:44:13.468 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@646427f7
+26-04-2023 07:44:13.469 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@eddc9bb
+26-04-2023 07:44:13.501 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:44:13.597 [main] INFO  org.restlet.Component.Server.start - Starting the internal [HTTP/1.1] server on port 8083
+26-04-2023 07:44:13.601 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: itemPostRoute started and consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:44:13.602 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: item-get-route-id started and consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:44:13.603 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://createItem
+26-04-2023 07:44:13.604 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://itemLookUpBySku
+26-04-2023 07:44:13.604 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+26-04-2023 07:44:13.605 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) started in 0.430 seconds
+26-04-2023 07:44:13.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:44:13.620 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:44:13.622 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+26-04-2023 07:44:13.636 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+26-04-2023 07:44:13.641 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 5.623 seconds (JVM running for 7.587)
+26-04-2023 07:44:24.770 [Restlet-928927280] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:44:24.784 [Restlet-928927280] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-ACLBLRFC818-1682475252166-0-2 on ExchangeId: ID-ACLBLRFC818-1682475252166-0-1). Exhausted after delivery attempt: 1 caught: com.google.gson.JsonSyntaxException: java.lang.NumberFormatException: empty String
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[itemPostRoute     ] [itemPostRoute     ] [restlet://http://localhost:8083/item?restletMethods=POST                      ] [        28]
+[itemPostRoute     ] [log1              ] [log                                                                           ] [         4]
+[itemPostRoute     ] [convertBodyTo1    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[itemPostRoute     ] [unmarshal1        ] [unmarshal[org.apache.camel.model.DataFormatDefinition@16ddffa2]               ] [         8]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.google.gson.JsonSyntaxException: java.lang.NumberFormatException: empty String
+	at com.google.gson.internal.bind.TypeAdapters$11.read(TypeAdapters.java:305)
+	at com.google.gson.internal.bind.TypeAdapters$11.read(TypeAdapters.java:295)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:826)
+	at org.apache.camel.component.gson.GsonDataFormat.unmarshal(GsonDataFormat.java:145)
+	at org.apache.camel.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:69)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97)
+	at org.apache.camel.component.restlet.RestletConsumer$1.handle(RestletConsumer.java:68)
+	at org.apache.camel.component.restlet.MethodBasedRouter.handle(MethodBasedRouter.java:58)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at com.google.gson.stream.JsonReader.nextLong(JsonReader.java:964)
+	at com.google.gson.internal.bind.TypeAdapters$11.read(TypeAdapters.java:303)
+	... 43 common frames omitted
+26-04-2023 07:44:24.798 [Restlet-928927280] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:44:24	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	500	3673	119	37	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:44:36.267 [Restlet-928927280] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "1",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:44:36.271 [Restlet-928927280] INFO  itemPostRoute.log - Unmarshaled record is Item [txType=ADD, sku=100, itemDescription=item1, price=100]
+26-04-2023 07:44:36.400 [Restlet-928927280] INFO  itemPostRoute.log - Persisted Item Record to DB: Item [txType=ADD, sku=100, itemDescription=item1, price=100]!
+26-04-2023 07:44:36.402 [Restlet-928927280] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:44:36	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	200	60	120	135	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:46:59.445 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-04-2023 07:46:59.446 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:44:08 IST 2023]; root of context hierarchy
+26-04-2023 07:46:59.451 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 07:46:59.452 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 07:46:59.453 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 4 routes (timeout 2 seconds)
+26-04-2023 07:46:59.458 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: item-get-route-id shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:46:59.458 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: itemPostRoute shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:46:59.459 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://itemLookUpBySku
+26-04-2023 07:46:59.459 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://createItem
+26-04-2023 07:46:59.459 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 4 routes completed in 0 seconds
+26-04-2023 07:46:59.486 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 2 minutes
+26-04-2023 07:46:59.487 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.036 seconds
+26-04-2023 07:46:59.488 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 07:46:59.489 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:06.407 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 23936 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:47:06.411 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:47:06.484 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:06 IST 2023]; root of context hierarchy
+26-04-2023 07:47:06.693 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:47:07.965 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78d3c606] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:47:07.994 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$9afd8c25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:47:08.324 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:47:08.336 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:47:08.337 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:47:08.445 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:47:08.446 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1963 ms
+26-04-2023 07:47:08.613 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:47:08.615 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:47:08.618 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:47:08.618 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:47:08.618 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:47:08.619 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:47:08.972 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:08.984 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:47:09.046 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:47:09.048 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:47:09.049 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:47:09.099 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:47:09.210 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:47:09.610 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:47:09.622 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:47:09.639 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:47:09.729 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:10.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:06 IST 2023]; root of context hierarchy
+26-04-2023 07:47:10.101 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:47:10.104 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 3 ms.
+26-04-2023 07:47:10.135 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:47:10.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:47:10.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:47:10.170 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:10.170 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:10.205 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:10.388 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:47:10.480 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:47:11.225 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:47:11.235 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:47:11.255 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:47:11.255 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:47:11.261 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:47:11.263 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:47:11.467 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@646427f7
+26-04-2023 07:47:11.468 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@eddc9bb
+26-04-2023 07:47:11.503 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:47:11.595 [main] INFO  org.restlet.Component.Server.start - Starting the internal [HTTP/1.1] server on port 8083
+26-04-2023 07:47:11.599 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: itemPostRoute started and consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:47:11.600 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: item-get-route-id started and consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:47:11.601 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://createItem
+26-04-2023 07:47:11.602 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://itemLookUpBySku
+26-04-2023 07:47:11.602 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+26-04-2023 07:47:11.603 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) started in 0.341 seconds
+26-04-2023 07:47:11.607 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:47:11.617 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:47:11.618 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+26-04-2023 07:47:11.631 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+26-04-2023 07:47:11.636 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 5.577 seconds (JVM running for 6.718)
+26-04-2023 07:47:18.358 [Restlet-1171708485] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "1",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:47:18.368 [Restlet-1171708485] INFO  itemPostRoute.log - Unmarshaled record is Item [txType=ADD, sku=100, itemDescription=item1, price=100]
+26-04-2023 07:47:18.489 [Restlet-1171708485] INFO  itemPostRoute.log - Persisted Item Record to DB: Item [txType=ADD, sku=100, itemDescription=item1, price=100]!
+26-04-2023 07:47:18.495 [Restlet-1171708485] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:47:18	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	200	60	120	151	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:47:40.901 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-04-2023 07:47:40.901 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:06 IST 2023]; root of context hierarchy
+26-04-2023 07:47:40.904 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 07:47:40.906 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 07:47:40.906 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 4 routes (timeout 2 seconds)
+26-04-2023 07:47:40.910 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: item-get-route-id shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:47:40.911 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: itemPostRoute shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:47:40.911 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://itemLookUpBySku
+26-04-2023 07:47:40.912 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://createItem
+26-04-2023 07:47:40.912 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 4 routes completed in 0 seconds
+26-04-2023 07:47:40.938 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 29.677 seconds
+26-04-2023 07:47:40.938 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.032 seconds
+26-04-2023 07:47:40.939 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 07:47:40.941 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:49.305 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 25508 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:47:49.308 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:47:49.357 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:49 IST 2023]; root of context hierarchy
+26-04-2023 07:47:49.457 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:47:50.522 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f265091] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:47:50.552 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$415016b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:47:50.854 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:47:50.867 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:47:50.868 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:47:50.986 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:47:50.987 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1630 ms
+26-04-2023 07:47:51.154 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:47:51.155 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:47:51.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:47:51.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:47:51.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:47:51.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:47:51.505 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:51.517 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:47:51.588 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:47:51.589 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:47:51.591 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:47:51.627 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:47:51.743 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:47:52.123 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:47:52.139 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:47:52.157 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:47:52.243 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:47:52.567 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:49 IST 2023]; root of context hierarchy
+26-04-2023 07:47:52.607 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:47:52.610 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 2 ms.
+26-04-2023 07:47:52.632 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:47:52.635 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:47:52.636 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:47:52.661 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:52.662 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:52.697 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:47:52.873 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:47:52.968 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:47:53.722 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:47:53.733 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:47:53.756 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:47:53.756 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:47:53.762 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:47:53.763 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:47:53.952 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@f723cdb
+26-04-2023 07:47:53.953 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@188ae8d2
+26-04-2023 07:47:53.990 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:47:54.082 [main] INFO  org.restlet.Component.Server.start - Starting the internal [HTTP/1.1] server on port 8083
+26-04-2023 07:47:54.086 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: itemPostRoute started and consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:47:54.087 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: item-get-route-id started and consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:47:54.088 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://createItem
+26-04-2023 07:47:54.089 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://itemLookUpBySku
+26-04-2023 07:47:54.089 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+26-04-2023 07:47:54.090 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) started in 0.327 seconds
+26-04-2023 07:47:54.094 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:47:54.102 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:47:54.104 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+26-04-2023 07:47:54.119 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+26-04-2023 07:47:54.123 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 5.106 seconds (JVM running for 6.153)
+26-04-2023 07:47:59.957 [Restlet-462986941] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "1",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:47:59.972 [Restlet-462986941] INFO  itemPostRoute.log - Unmarshaled record is Item [txType=ADD, sku=100, itemDescription=item1, price=100]
+26-04-2023 07:48:00.088 [Restlet-462986941] INFO  itemPostRoute.log - Persisted Item Record to DB: Item [txType=ADD, sku=100, itemDescription=item1, price=100]!
+26-04-2023 07:48:00.095 [Restlet-462986941] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:48:00	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	200	60	120	154	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:49:13.140 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-04-2023 07:49:13.141 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:47:49 IST 2023]; root of context hierarchy
+26-04-2023 07:49:13.144 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 07:49:13.144 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 07:49:13.145 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 4 routes (timeout 2 seconds)
+26-04-2023 07:49:13.148 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: item-get-route-id shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:49:13.148 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: itemPostRoute shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:49:13.149 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://itemLookUpBySku
+26-04-2023 07:49:13.150 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://createItem
+26-04-2023 07:49:13.150 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 4 routes completed in 0 seconds
+26-04-2023 07:49:13.170 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 1 minute
+26-04-2023 07:49:13.170 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.026 seconds
+26-04-2023 07:49:13.171 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 07:49:13.172 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:51:15.156 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on ACLBLRFC818 with PID 19716 (D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2\target\classes started by sawan.k in D:\camel\springboot-camel-main\learncamel-spring-boot-restlet-lab2)
+26-04-2023 07:51:15.159 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+26-04-2023 07:51:15.206 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:51:15 IST 2023]; root of context hierarchy
+26-04-2023 07:51:15.325 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+26-04-2023 07:51:16.488 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78d3c606] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:51:16.515 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$9afd8c25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-04-2023 07:51:16.834 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+26-04-2023 07:51:16.846 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+26-04-2023 07:51:16.847 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+26-04-2023 07:51:16.967 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+26-04-2023 07:51:16.967 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1761 ms
+26-04-2023 07:51:17.154 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+26-04-2023 07:51:17.155 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'webServlet' to [/h2-console/*]
+26-04-2023 07:51:17.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+26-04-2023 07:51:17.159 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+26-04-2023 07:51:17.159 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+26-04-2023 07:51:17.159 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+26-04-2023 07:51:17.513 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:51:17.528 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+26-04-2023 07:51:17.601 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+26-04-2023 07:51:17.602 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+26-04-2023 07:51:17.604 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+26-04-2023 07:51:17.678 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+26-04-2023 07:51:17.808 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+26-04-2023 07:51:18.243 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+26-04-2023 07:51:18.257 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: item
+26-04-2023 07:51:18.274 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+26-04-2023 07:51:18.376 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26-04-2023 07:51:18.712 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:51:15 IST 2023]; root of context hierarchy
+26-04-2023 07:51:18.754 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executing SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql]
+26-04-2023 07:51:18.757 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils.executeSqlScript - Executed SQL script from URL [file:/D:/camel/springboot-camel-main/learncamel-spring-boot-restlet-lab2/target/classes/data.sql] in 3 ms.
+26-04-2023 07:51:18.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-ui]}" onto public java.lang.String com.learncamel.config.SwaggerConfig$SwaggerWelcome.redirectToUi()
+26-04-2023 07:51:18.782 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+26-04-2023 07:51:18.783 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+26-04-2023 07:51:18.813 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:51:18.813 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:51:18.852 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+26-04-2023 07:51:19.027 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+26-04-2023 07:51:19.124 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 11)
+26-04-2023 07:51:20.042 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+26-04-2023 07:51:20.052 [main] INFO  c.l.route.ItemRestServiceRoute.configure - Starting the Camel Route
+26-04-2023 07:51:20.074 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+26-04-2023 07:51:20.074 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+26-04-2023 07:51:20.082 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) is starting
+26-04-2023 07:51:20.083 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+26-04-2023 07:51:20.301 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using EntityManagerFactory found in registry with id [entityManagerFactory] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@646427f7
+26-04-2023 07:51:20.302 [main] INFO  o.a.camel.component.jpa.JpaComponent.doStart - Using TransactionManager found in registry with id [transactionManager] org.springframework.orm.jpa.JpaTransactionManager@eddc9bb
+26-04-2023 07:51:20.340 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+26-04-2023 07:51:20.432 [main] INFO  org.restlet.Component.Server.start - Starting the internal [HTTP/1.1] server on port 8083
+26-04-2023 07:51:20.435 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: itemPostRoute started and consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 07:51:20.437 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: item-get-route-id started and consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 07:51:20.438 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://createItem
+26-04-2023 07:51:20.439 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://itemLookUpBySku
+26-04-2023 07:51:20.439 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+26-04-2023 07:51:20.439 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: itemapps) started in 0.358 seconds
+26-04-2023 07:51:20.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:51:20.452 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+26-04-2023 07:51:20.454 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+26-04-2023 07:51:20.468 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+26-04-2023 07:51:20.474 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 5.628 seconds (JVM running for 6.746)
+26-04-2023 07:51:54.494 [http-nio-127.0.0.1-8080-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+26-04-2023 07:51:54.495 [http-nio-127.0.0.1-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+26-04-2023 07:51:54.528 [http-nio-127.0.0.1-8080-exec-6] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+26-04-2023 07:55:05.403 [Restlet-1716537299] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "1",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:55:05.418 [Restlet-1716537299] INFO  itemPostRoute.log - Unmarshaled record is Item [txType=ADD, sku=100, itemDescription=item1, price=100]
+26-04-2023 07:55:05.522 [Restlet-1716537299] INFO  itemPostRoute.log - Persisted Item Record to DB: Item [txType=ADD, sku=100, itemDescription=item1, price=100]!
+26-04-2023 07:55:05.534 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:55:05	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	200	60	120	142	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:55:56.331 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 07:55:56.337 [Restlet-1716537299] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-ACLBLRFC818-1682475678948-0-4 on ExchangeId: ID-ACLBLRFC818-1682475678948-0-3). Exhausted after delivery attempt: 1 caught: com.learncamel.exception.ValidationException: Missing param 'sku'!
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[item-get-route-id ] [item-get-route-id ] [restlet://http://localhost:8083/item?restletMethods=GET                       ] [         3]
+[item-get-route-id ] [log4              ] [log                                                                           ] [         1]
+[item-get-route-id ] [convertBodyTo2    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[item-get-route-id ] [to2               ] [direct:itemLookUpBySku                                                        ] [         0]
+[route2            ] [process2          ] [Processor@0x29d8f3c4                                                          ] [         1]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.exception.ValidationException: Missing param 'sku'!
+	at com.learncamel.route.ItemRestServiceRoute$1.process(ItemRestServiceRoute.java:85)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:62)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97)
+	at org.apache.camel.component.restlet.RestletConsumer$1.handle(RestletConsumer.java:68)
+	at org.apache.camel.component.restlet.MethodBasedRouter.handle(MethodBasedRouter.java:58)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+26-04-2023 07:55:56.338 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:55:56	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	500	3350	0	7	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:58:26.948 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 07:58:26.950 [Restlet-1716537299] INFO  c.l.route.ItemRestServiceRoute.process - jpa query : jpa://com.learncamel.domain.Item?query=select itm from com.learncamel.domain.Item itm where itm.sku = '${headers.sku}'
+26-04-2023 07:58:26.979 [Restlet-1716537299] INFO  route2.log - Found Item Record for an sku no from DB: [Item [txType=ADD, sku=100, itemDescription=item1, price=100.00]]!
+26-04-2023 07:58:26.987 [Restlet-1716537299] INFO  item-get-route-id.log - Persisted Item Record to DB: [{"itemId":1,"txType":"ADD","sku":"100","itemDescription":"item1","price":100.00}]!
+26-04-2023 07:58:26.989 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:58:26	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	200	82	0	41	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:59:45.021 [Restlet-1716537299] INFO  itemPostRoute.log - Received Body is {
+    "itemId": "2",
+    "txType": "ADD",
+    "sku": "100",
+    "itemDescription": "item1",
+    "price": "100"
+}
+
+26-04-2023 07:59:45.021 [Restlet-1716537299] INFO  itemPostRoute.log - Unmarshaled record is Item [txType=ADD, sku=100, itemDescription=item1, price=100]
+26-04-2023 07:59:45.024 [Restlet-1716537299] INFO  itemPostRoute.log - Persisted Item Record to DB: Item [txType=ADD, sku=100, itemDescription=item1, price=100]!
+26-04-2023 07:59:45.025 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:59:45	0:0:0:0:0:0:0:1	-	localhost	8083	POST	/item	-	200	60	120	4	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 07:59:48.481 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 07:59:48.482 [Restlet-1716537299] INFO  c.l.route.ItemRestServiceRoute.process - jpa query : jpa://com.learncamel.domain.Item?query=select itm from com.learncamel.domain.Item itm where itm.sku = '${headers.sku}'
+26-04-2023 07:59:48.486 [Restlet-1716537299] INFO  route2.log - Found Item Record for an sku no from DB: [Item [txType=ADD, sku=100, itemDescription=item1, price=100.00], Item [txType=ADD, sku=100, itemDescription=item1, price=100.00]]!
+26-04-2023 07:59:48.486 [Restlet-1716537299] INFO  item-get-route-id.log - Persisted Item Record to DB: [{"itemId":1,"txType":"ADD","sku":"100","itemDescription":"item1","price":100.00},{"itemId":2,"txType":"ADD","sku":"100","itemDescription":"item1","price":100.00}]!
+26-04-2023 07:59:48.488 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	07:59:48	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	200	163	0	7	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 08:03:06.364 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 08:03:06.364 [Restlet-1716537299] INFO  c.l.route.ItemRestServiceRoute.process - jpa query : jpa://com.learncamel.domain.Item?query=select itm from com.learncamel.domain.Item itm where itm.sku = '${headers.sku}'
+26-04-2023 08:03:06.369 [Restlet-1716537299] INFO  route2.log - Found Item Record for an sku no from DB: !
+26-04-2023 08:03:06.369 [Restlet-1716537299] INFO  item-get-route-id.log - Persisted Item Record to DB: []!
+26-04-2023 08:03:06.370 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	08:03:06	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	200	2	0	7	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 08:03:14.085 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 08:03:14.086 [Restlet-1716537299] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-ACLBLRFC818-1682475678948-0-14 on ExchangeId: ID-ACLBLRFC818-1682475678948-0-13). Exhausted after delivery attempt: 1 caught: com.learncamel.exception.ValidationException: Missing param 'sku'!
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[item-get-route-id ] [item-get-route-id ] [restlet://http://localhost:8083/item?restletMethods=GET                       ] [         1]
+[item-get-route-id ] [log4              ] [log                                                                           ] [         0]
+[item-get-route-id ] [convertBodyTo2    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[item-get-route-id ] [to2               ] [direct:itemLookUpBySku                                                        ] [         0]
+[route2            ] [process2          ] [Processor@0x29d8f3c4                                                          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.exception.ValidationException: Missing param 'sku'!
+	at com.learncamel.route.ItemRestServiceRoute$1.process(ItemRestServiceRoute.java:85)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:62)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97)
+	at org.apache.camel.component.restlet.RestletConsumer$1.handle(RestletConsumer.java:68)
+	at org.apache.camel.component.restlet.MethodBasedRouter.handle(MethodBasedRouter.java:58)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+26-04-2023 08:03:14.087 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	08:03:14	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	500	3350	0	2	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 08:03:31.601 [Restlet-1716537299] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 08:03:31.601 [Restlet-1716537299] INFO  c.l.route.ItemRestServiceRoute.process - jpa query : jpa://com.learncamel.domain.Item?query=select itm from com.learncamel.domain.Item itm where itm.sku = '${headers.sku}'
+26-04-2023 08:03:31.603 [Restlet-1716537299] INFO  route2.log - Found Item Record for an sku no from DB: !
+26-04-2023 08:03:31.604 [Restlet-1716537299] INFO  item-get-route-id.log - Persisted Item Record to DB: []!
+26-04-2023 08:03:31.605 [Restlet-1716537299] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	08:03:31	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	200	2	0	3	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 08:04:03.128 [Restlet-1750105461] INFO  item-get-route-id.log - Received Body is 
+26-04-2023 08:04:03.131 [Restlet-1750105461] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-ACLBLRFC818-1682475678948-0-18 on ExchangeId: ID-ACLBLRFC818-1682475678948-0-17). Exhausted after delivery attempt: 1 caught: com.learncamel.exception.ValidationException: Missing param 'sku'!
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[item-get-route-id ] [item-get-route-id ] [restlet://http://localhost:8083/item?restletMethods=GET                       ] [         2]
+[item-get-route-id ] [log4              ] [log                                                                           ] [         1]
+[item-get-route-id ] [convertBodyTo2    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[item-get-route-id ] [to2               ] [direct:itemLookUpBySku                                                        ] [         0]
+[route2            ] [process2          ] [Processor@0x29d8f3c4                                                          ] [         1]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.exception.ValidationException: Missing param 'sku'!
+	at com.learncamel.route.ItemRestServiceRoute$1.process(ItemRestServiceRoute.java:85)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:62)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:148)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97)
+	at org.apache.camel.component.restlet.RestletConsumer$1.handle(RestletConsumer.java:68)
+	at org.apache.camel.component.restlet.MethodBasedRouter.handle(MethodBasedRouter.java:58)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:639)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+26-04-2023 08:04:03.137 [Restlet-1750105461] INFO  org.restlet.Component.LogService.afterHandle - 2023-04-26	08:04:03	0:0:0:0:0:0:0:1	-	localhost	8083	GET	/item	-	500	3350	0	9	http://localhost:8083	PostmanRuntime/7.29.2	-
+26-04-2023 10:22:42.155 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+26-04-2023 10:22:42.180 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37f1104d: startup date [Wed Apr 26 07:51:15 IST 2023]; root of context hierarchy
+26-04-2023 10:22:42.289 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+26-04-2023 10:22:42.300 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutting down
+26-04-2023 10:22:42.309 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 4 routes (timeout 2 seconds)
+26-04-2023 10:22:42.345 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: item-get-route-id shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=GET
+26-04-2023 10:22:42.350 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: itemPostRoute shutdown complete, was consuming from: restlet://http://localhost:8083/item?restletMethods=POST
+26-04-2023 10:22:42.383 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://itemLookUpBySku
+26-04-2023 10:22:42.384 [Camel (itemapps) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://createItem
+26-04-2023 10:22:42.385 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 4 routes completed in 0 seconds
+26-04-2023 10:22:42.464 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) uptime 2 hours 31 minutes
+26-04-2023 10:22:42.465 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: itemapps) is shutdown in 0.166 seconds
+26-04-2023 10:22:42.470 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+26-04-2023 10:22:42.478 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
