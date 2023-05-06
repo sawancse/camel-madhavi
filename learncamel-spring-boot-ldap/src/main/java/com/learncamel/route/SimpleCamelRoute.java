@@ -24,7 +24,6 @@ public class SimpleCamelRoute extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 
-		
 		/*
 		 * onException(Exception.class).process(new Processor() {
 		 * 
@@ -32,7 +31,7 @@ public class SimpleCamelRoute extends RouteBuilder {
 		 * log.info("handling ex 1"); }
 		 * }).log("Exception body ${body} ").handled(true).to("file:data/error");
 		 */
-		
+
 		from("timer:hello?period=30s").process(new Processor() {
 
 			@Override
@@ -93,30 +92,22 @@ public class SimpleCamelRoute extends RouteBuilder {
 				javax.naming.directory.Attribute mailAttr = attributes.get("mail");
 				String mail = (String) mailAttr.get();
 
-				javax.naming.directory.Attribute telephoneNumberAttr = attributes.get("cn");
-				if(telephoneNumberAttr ==null)
+				javax.naming.directory.Attribute cnAttr = attributes.get("cn");
+				if (cnAttr == null)
 					return;
-				String telephoneNumber = (String) telephoneNumberAttr.get();
-				if(telephoneNumber == null)
-					telephoneNumber = "NA";
-				
+				String cn = (String) cnAttr.get();
+				if (cn == null)
+					cn = "NA";
+
 				sbUidDetails.append(uid);
 				sbUidDetails.append(",");
 				sbUidDetails.append(mail);
-			    sbUidDetails.append(",");
-				sbUidDetails.append(telephoneNumber);
-				System.out.println("sbUidDetails + " + sbUidDetails);
-				/* NamingEnumeration<?> attributesEnum = null;
-				 
-				javax.naming.directory.Attribute attribute = attributes.get("telephoneNumber");
-				    if (attribute == null) return;
-				    attributesEnum = attribute.getAll();
-				    Collections.list(attributesEnum).stream().map(Object::toString);*/
-				    exchange.getIn().setBody(sbUidDetails+"\n");
-				    
+				sbUidDetails.append(",");
+				sbUidDetails.append(cn);
+
+				exchange.getIn().setBody(sbUidDetails + "\n");
+
 			}
-		})
-		.log("body ${body}")
-		 .to("file:data/output/?fileName=ldap.csv&fileExist=Append&charset=utf-8&Noop=false");
+		}).log("body ${body}").to("file:data/output/?fileName=ldap.csv&fileExist=Append&charset=utf-8&Noop=false");
 	}
 }
