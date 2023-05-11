@@ -134,7 +134,7 @@ public class SimpleCamelRoute1 extends RouteBuilder {
 					
 					cn.replaceAll(",", "|");
 				}
-				String fullName[] = cn.split(",");
+				//String fullName[] = cn.split(",");
 				/*String fName= fullName[0];
 				String mName= fullName[1];
 				String lName= fullName[2];*/
